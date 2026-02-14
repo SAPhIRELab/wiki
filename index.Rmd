@@ -1,9 +1,98 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
-date: "`r Sys.Date()`"
+title: "Wiki @ SAPhIRE Lab"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# Welcome to the Group Wiki 👋
 
+This wiki is made public in the hope that it may be useful to others, but it is primarily intended as a guideline for members of our research group.
+
+On this page, I provide a high-level overview for new students, outlining what to expect and how to get started. Other pages go into more depth on specific topics that you will encounter at different stages of your time in the group. In the rest of the chapters, we describe the core practices and standards we follow in our research group:
+
+- Identifying Problems and Conducting Research
+
+- Code Structure
+
+- Writing Systems Security Papers
+
+- Preparing Rebuttals
+
+- ArXiv Submission Policies
+
+- Preparing Slides for Presentations
+
+**Note for New Members:** This may seem overwhelming at first—but do not worry.
+You do not need to absorb everything at once. These resources are meant to support you over time, and you will naturally become familiar with them as you progress.
+
+
+## Meetings & Reports
+
+**Weekly Meeting Reports:** These reports keep me and your peers informed about your work.
+- Share what you’ve been working on, roadblocks that you need help with, and what’s next.
+
+- No need to report everything (e.g., TA duties).
+
+- This is *not* about proving productivity.
+
+- Keep it *brief, clear, and focused on interesting updates*.
+
+- You may receive useful feedback from others.
+
+**Weekly One-on-One Meetings [Duration: 30 minutes]:**
+The goal is to *get feedback*. Come prepared. We will walk through your weekly meeting report so make sure it is filled atleast a day before the meeting:
+
+- Briefly summarize what you worked on and key challenges.
+
+- Focus the discussion on items where you want feedback.
+
+- When discussing challenges, bring *possible options or approaches*.
+
+- Any topic is welcome—*technical or personal*.
+
+
+**Weekly Group Meetings [Duration: 60 minutes]:**
+Typically feature a paper presentation (your own or one you’ve read). Announce ahead of time in the team channel. *Go over the paper you wan to present* and highlight their limitations, and future work that you can think of. Spend a few hours on the day before to prepare a short presentation using the template covering the following slides: (a) Introduction/Background; (b) Problem Statement, (c) Experimental Setup; (d) Results and Analysis; and (e) Limitations and Future Work that you can work on as new projects.
+See the section on how to make presentations.
+The goal here is to get you learn *how to make presentations and practice giving talks*. For me and others, this will give us a chance to identify interesting extensions to work on as projects.
+
+**Weekly Project Meetings [Duration: 60 minutes]:**
+Each project has a **weekly meeting** with its members to discuss progress and updates, roadblocks and how to address them, and how to position the work.
+
+
+**Brainstorming Sessions [Duration: TBD as needed]:**
+Held as needed to:
+- Review papers and identify research problems to work on.
+
+- Build research themes (e.g., for grants or theses).
+
+- Expose you to the *grant-writing and ideation process*.
+
+- Involve one or more students who may later work on resulting projects.
+
+- Once ideas are finalized, new projects will be added to the research project list.
+
+
+## Scheduling Meetings
+To schedule meetings:
+
+1. Check my [calendar](https://outlook.office365.com/calendar/published/5dbe9413947f436888808d87f523519a@uwaterloo.ca/0273e91abf4c4cbba0411c5cd5c0129d6237120652299021335/calendar.html)
+
+2. Select an available time slot.
+
+3. Start all meetings after **10:30 am**.
+
+*Bookmark the calendar link—you will need it regularly to schedule meetings.*
+
+## Policies for Vacation
+
+I encourage students to take time off to recharge and can help return to problems with a fresh perspective. If you plan to take a vacation, please ensure the following:
+
+- Confirm there are no critical deadlines during this period (e.g., submissions, rebuttals).
+
+- Planning ahead ensures minimal disruption, inform Vasisht and obtain approval.
+
+- Notify your collaborators and ensure your absence does not disrupt shared projects.
+
+- Cancel all one-on-one meetings with Vasisht for the duration.
+
+- Coordinate with project collaborators to decide whether project meetings should also be paused.

@@ -1,0 +1,20 @@
+# Guidelines: Preparing Slides for Presentation
+
+We have a standard template we use in our group, and for papers, we should follow the suggested template. This allows me to combine slides from different projects for my presentations.
+
+Citations on each slides of the style:
+ABC et al. <Paper name: italics>. Venue. year.
+Also make the paper as a link. You can consider variations but make sure it is constent throughtout the slides.
+Last slide should say summary with a QR code linking to the paper
+No “thank you” or “Questions”…waste of space…
+Similar format as the paper……
+use the real estate for title slide to convey a message; iNstead of saying introduction say “AI regulations are emerging”
+What is the problem
+Color coding:
+See if each slide there is something to color code
+BLue: important
+Red: bad
+Green good
+Avoid orphans
+
+Not a big fan of lot of fancy animatiions and icons...keep it simple...at most consider text boxes etc.

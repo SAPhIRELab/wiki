@@ -1,0 +1,129 @@
+# Guidelines: Research Projects
+
+**List of Research Projects:** We maintain a list of potential research projects is maintained in an internal [Google document](https://docs.google.com/document/d/1WY1qt6ZAFGnUzVAdZhEANKHW0_j6jr4zTpsKYjgtaH8/edit?usp=sharing). This document is **confidential** and must not be shared externally. An overview of  guidelines, suggestions, expectations for undergraduates, master's and PhD students, and work dynamics are indicated in README. Please request for access to the document (access will be granted only to members of the group or collaborators). Respect intellectual property, and work with the original proposers and give appropriate credit. If interested in a topic, contact the listed mentor (me and/or the students who proposed an idea mentioned in the document).
+
+
+## Types of Projects
+
+This is inherently hard — there is no fixed formula for a good paper.  
+I particularly enjoy projects that offer a clear and compelling takeaway. These include work that challenges widely accepted assumptions, highlights fundamental limitations of existing approaches, and/or proposes new, principled directions or guidelines for a research area. I also value projects that are experimentally rigorous, providing comprehensive evaluations that cover all relevant baselines and corner cases.
+Answering "why" does some unintended behavior happens is harder but more rewarding compared to "how" to do something (e.g., showing attacks work). Always strive to include a discussion on "why" along with how to strengthen the paper regardless of type pf project indicated below.
+
+
+**Libraries and Benchmarks:** Designing open-source libraries or frameworks for real-world use and industry adoption is valuable. However, it requires significant time and maintenance effort, and adoption by researchers or practitioners is uncertain and difficult to predict.
+Pursue this path only with clear motivation and long-term commitment.
+
+
+**Attack Papers:** Attack papers can be attractive but come with important caveats: many are low-hanging fruit, leading to high competition and high risk of being scooped. Simply adapting existing attacks to new model classes or threat types is usually weak unless the attack is (a) non-trivial, (b) substantially outperforms prior work, and (c) breaks existing defenses in a meaningful way.
+
+As an exception to the above discussion, works that proposes a new, practical threat models and presents the *first* attack in a *practical setting or real-world systems* can be very interesting (see papers by [Vitaly Shmatikov](https://scholar.google.com/citations?hl=en&user=rejZUEkAAAAJ&view_op=list_works&sortby=pubdate) as an example); or highlighting issues and provide insights with existing work [1](https://www.computer.org/csdl/proceedings-article/satml/2025/171100a385/26VnnZGainS). Similarly, papers that systematically break prior defenses and expose systematic limitations in prior work (e.g., Carlini-style work: [1](https://openreview.net/forum?id=7B9mTg7z25), [2](https://proceedings.mlr.press/v80/athalye18a.html), [3](https://dl.acm.org/doi/abs/10.1145/3128572.3140444), [4](https://arxiv.org/abs/2106.14851)) are good contributions, as they highlight systematic issues with approaches in the community and provide guidelines to address them.
+
+Personally, I feel papers that show “known attack X works can be adapted to new model type Y” are not very exciting even if they can be published in top-tier venues (with extensive empirical evaluation) [1](https://dl.acm.org/doi/10.1145/3460120.3484770), [2](https://www.usenix.org/conference/usenixsecurity22/presentation/zhang-zhikun), [3](https://arxiv.org/abs/2210.00968), [4](https://dl.acm.org/doi/abs/10.1145/3460120.3484571), [5](https://openaccess.thecvf.com/content/CVPR2023/html/Sha_Cant_Steal_Cont-Steal_Contrastive_Stealing_Attacks_Against_Image_Encoders_CVPR_2023_paper.html). I would identify such papers as low hanging fruits and would nudge students to take up more challenging research directions.
+
+
+**Defense Papers:** Designing strong defenses is extremely difficult. Despite empirical evaluation showing that a defense is effective, it is important to check whether the protection is due to the defense design or an artifact of improper attack setup ( [1](https://proceedings.neurips.cc/paper_files/paper/2022/hash/91ffdc5e2f12436d99914418e38d0a09-Abstract-Conference.html) and [2](https://nicholas.carlini.com/writing/2024/yet-another-broken-defense.html)). It is very important to design strong attacks in order to demonstrate effectiveness of defenses. This includes that the hyperparameter tuning for the attacks to improve attack effectiveness. This is the reason several papers on robustness have been broken[1](https://openreview.net/forum?id=7B9mTg7z25), [2](https://proceedings.mlr.press/v80/athalye18a.html), [3](https://dl.acm.org/doi/abs/10.1145/3128572.3140444), [4](https://arxiv.org/abs/2106.14851)).
+
+When proposing a defense: assume a fully informed adversary, and consider all realistic attack strategies, including assuming that the adversary can design attacks specific to the defense and using feedback from the target model (aka "adaptive attack" which is the strongest possible attack that you can design). Also, it is important to stress-test the defense thoroughly against all attacks tuned to ensure perfect attack success.
+
+Additionally, it is acceptable for a defense to be imperfect where the you clearly state when it works and when it fails, you justify why the effective regime matters, and discuss limitations and future directions to address the limitations transparently. For instance, see the paper on fingerprinting using conferrable examples which is not effective with adversarial training [1](https://arxiv.org/abs/1912.00888) or our paper on fingerprinting for graph neural network [2](https://arxiv.org/abs/2304.08566). Since these approaches were the first to suggest defenses, they were useful directions for the community to accept in reputed venues.
+
+Finally, while designing defenses, identify a set of requirements which you want the defense to satisfy (e.g., effectiveness, efficiency, etc.) as part of the problem statement. You can then structure the paper, design of defense, and evaluation of proposed the defense according to different requirements. This allows the structure of the paper to be done systematically.
+
+**Systems Papers:** I have also worked on system-oriented papers which propose a novel system (e.g., Laminator [1](https://arxiv.org/abs/2406.17548) and Pal*M [2](https://arxiv.org/abs/2601.16199)). Such papers can take a long time since it requires implementing the systems (e.g., setting up trusted computing environment for experiments). While working on such papers, first identify the problems that you want to solve. For designing the system, identify a set of requirements which you want the system to satisfy (e.g., effectiveness, efficiency, etc.). While trying to build the system to solve the problem statement, you might end up with additional hurdles during implementation requiring novel solutions. These can be identified as sub-problems and contributions that can be claimed. Overall, I prefer such papers as well as an interesting direction of work.
+
+**SoK (Systematization of Knowledge):** An SoK paper is not merely a survey, and doing it well is challenging—often harder than writing a standard attack or defense paper. While simple categorization  (e.g., [1](https://arxiv.org/abs/2009.04131)) can be useful and accepted at top venues, such works are closer to conventional surveys and are not what I aim to do.
+
+I view a strong SoK as proposing a guideline, framework, or theory that explains how and why phenomena occur. This theory is necessarily a conjecture—imperfect but principled—that captures the majority of cases through underlying factors or principles, and enables reasoning about and prediction of future cases. The evaluation in an SoK should therefore justify why the conjecture is reasonable: by showing that it explains prior work and by empirically validating unexplored cases.
+
+In other words, prior work should be used to validate your proposed theory or conjecture. Strong SoK papers articulate a unifying framework or conjecture and support it through systematic analysis and/or empirical evidence. Throughout, they should clearly identify who can use the framework, how it should be applied, and why it is useful. See [1](https://arxiv.org/abs/2312.04542) and [2](https://openreview.net/forum?id=C7FgsjfFRC).
+
+**Proposing a Novel Notion/Concept:** Sometimes the paper is not necessarily ground breaking but introduces a new concept. For instance, my first work on "Attesting Distributional Properties of Training Data" is not a practical solution that is likely to be deployed [1](https://arxiv.org/abs/2308.09552). But I use this to highlight limitations of existing techniques such as those based on machine learning or cryptographic primitives, and also the first to propose the notion of ML property attestation. Similarly, there could be papers which you are proposing for the first time but do not have good solutions to solve it. I encourage you to write it up with tentative solutions or directions, and highlight the limitations and need for future work to address them. These can also be written as a blogpost or re-framed as a position paper is sufficient positions are identified and defended.
+
+**Position Papers:** I have also dabbled with a position paper when the community seemed to have deviated from some core principles. This can be good pieces of work. But generally, you should have expertise on some topic to identify that something is completely wrong and you can rant about it in a systematic and principled way (see [1](https://openreview.net/forum?id=YmTxiR1HUX), [2](https://icml.cc/virtual/2024/poster/33114)). Hence, their occurances will be rather rare and will be explored only if there is substantial thing to say clearly highlighting the issues and presenting guidelines to address them, which cannot be covered in a tweet or a blogpost.
+
+
+## My Approach to Identify Research Problems
+
+I would like to outline my general approach to identifying research problems. Keep in mind that this process is not perfect. Many times, I become excited about certain ideas, only to discard them later after further discussion and reflection, often because they turn out to be incremental or less impactful than initially expected. I strongly recommend keeping a scratchpad of ideas and spending time evaluating whether they are truly promising by discussing them with others, including me. Also, please don’t get discouraged if many of your ideas are set aside—this is a normal and healthy part of the research process. A significant portion of my own ideas never move forward.
+
+The first step in identifying new ideas is reading papers—there is no substitute for this. The broader the range of papers you read, the more connections and ideas you will generate. For a specific topic, or if you are trying to enter a new area, start by identifying the most influential papers: recent state-of-the-art work from top-tier venues, published surveys or SoKs (Systematization of Knowledge papers), and then follow the citation trail to explore related work. As you go through these papers, critically evaluate whether your idea still holds up in light of existing research and whether it meaningfully advances the state of the art.
+
+- *Inspired from Other Domains:* After reading broadly across domains, I look for ideas that can be adapted to ML security and privacy. For example, work on contextual integrity can inspire new ways to reason about LLM agents. I am particularly interested in research that draws parallels between established concepts in other fields and emerging ML security problems, such as connecting data/control-flow integrity to prompt injection attacks, or borrowing ideas like return-oriented programming to frame new defenses. This cross-pollination often extends beyond security to areas like programming languages, formal verification, and human–computer interaction. The idea is to identify tools and conceptual frameworks from other disciplines that can meaningfully address challenges in ML security and privacy.
+These connections usually serve as starting points. From there, deeper analysis and discussion are needed to uncover the real challenges in applying these ideas directly. Importantly, *identifying and solving non-trivial challenges strengthens a paper and demonstrates that the contribution goes beyond a simple extension of prior work.*
+
+- *Systematic Research:* Even when prior work addresses a problem, it is often done in isolation—focusing on specific attacks or defenses. I am drawn to systematic research that surveys related work, identifies recurring patterns and failures, and develops principled, general solutions that extend beyond individual cases. Although this approach requires more effort, it produces unified insights rather than fragmented results scattered across many narrow papers.
+
+I prefer one strong, comprehensive paper built on a common framework over multiple shorter papers that each analyze a single instance of a broader problem. For example, instead of studying pairwise defense combinations or isolated unintended interactions, my work synthesizes prior results, highlights their limitations, and offers a unified explanation that applies across settings.
+
+Importantly, such frameworks address the underlying "why" enabling explanation and prediction of new interactions. Subsequent case studies then serve mainly to validate these predictions empirically, they are no longer surprising because they follow naturally from the framework. In my experience, this approach leads to deeper and more impactful contributions.
+
+- *Identify Problems Pertaining to Practical Deployment:* People often complain that research is not applicable for practical systems. And indeed a lot of papers being published consider academic problems (for instance, personally various privacy attacks such as distribution inference [1](https://arxiv.org/abs/2212.07591) and membership inference [2](https://ieeexplore.ieee.org/document/7958568) seem of academic interests but not necessarily a concern for practitioners). Any opportunity you get, try to have conversations with people in the industry to see what problems they think are an issues. Research problems identified by looking at problems faced by industry could be very interesting.
+
+## Note on Terminology
+
+ML literature is riddled with bad terminology and please avoid them while writing papers. I highlight some of them below which I prefer to use in the papers.
+
+- *Property vs. Risks vs. Attacks vs. Requirements*: I define properties as desirable characteristics that ML models should satisfy, including security, privacy, fairness, transparency, and safety. The literature identifies various risks associated with each of these properties. For example, security risks include evasion, poisoning, backdoors, unauthorized model ownership, and unauthorized data usage. Similarly, privacy risks include membership inference, attribute inference, distribution inference, and data reconstruction.
+For each risk, multiple attacks have been proposed to exploit it. For instance, evasion risks are targeted by attacks such as FGSM, PGD, and AutoAttack. Metrics are used to evaluate a model’s susceptibility to these risks across different attacks. Defenses, in turn, aim to reduce susceptibility and limit the effectiveness of such attacks.
+When writing research papers, I structure the design and evaluation of attacks, defenses, or systems around key *requirements*, such as effectiveness, utility preservation, efficiency, and robustness.
+
+- *"Security vs. Robustness"*: *Security* is a desirable property of ML models and encompasses confidentiality, integrity, and availability. Accordingly, security risks include evasion, poisoning and backdoor attacks, as well as sponge attacks. *Robustness* is a fundamental requirement when designing defenses against any risk. It ensures that a defense cannot be easily bypassed by an adversary through adversarial inputs. While robustness is closely related to security, it is not limited to it; robustness is also important for defenses aimed at protecting other properties, such as privacy, safety, and fairness.
+
+- *"Adaptive attacks"*: In the ML community, adaptive attacks typically refer to scenarios where the adversary knows about the defenses and crafts attacks accordingly. In traditional systems security, it is standard to assume that attackers have full knowledge of a defense’s technical details, except for any secret credentials. We adopt this definition of “adaptive,” where the adversary optimizes queries based on the loss or outcome of previous responses. Accordingly, we use the following conventions: Naïve (no knowledge of the defense), non-adaptive (optimizes attacks on a local surrogate model without feedback from the target model), and adaptive (optimizes attacks using feedback from previous target model responses).
+
+Some evasion attacks and jailbreaks qualify as adaptive if they adjust queries based on prior responses from the target model. Misuse of this terminology has led to a three-stage publication pattern in ML security research: (a) an initial paper identifies a problem and proposes a “defense” assuming a naïve adversary; (b) follow-up paper evaluates attacks assuming adversaries know the defense (calling them “adaptive”); and (c) third paper proposes robust defenses against these so-called adaptive attacks. This fragmentation could be avoided: a single, strong paper should propose defenses that assume the strongest possible attacks by default. The root of this issue is often the lack of a proper systems security background among ML researchers. Learning the correct principles from security and privacy can help design more rigorous and impactful ML defenses.
+
+- *"Adversarial Attacks"*: Such terms are tautological or redundant expressions in English. All attacks by definition are adversarial and there are no benign attacks. ML community started using them to indicate adversarial examples and then it became a mess. Do not make such mistakes just because the entire community has blindly decided to follow some convention.
+
+- *Overloading Terminology:* New papers propose new terminology for things which are already existing in literature, bloating the set of terminology and adding to the confusion. For instance, Anthropic's use of alignment faking, deception, interal subversion etc. seems to refer to the same thing but ends up creating confusion and bloats the literature with different terms. There is no clear consensus in terminology currently. Try to avoid that and use consistent terms across your papers, within the ML community, but also across different communities.
+
+
+## How to Approach Projects
+
+**Comparison with Baselines**
+
+*Related Work:* Conduct a thorough review *before starting* the project. Use related work to understand how to position your contribution. If similar work exists, determine whether your differentiation is clear, significant, worth the effort and suitable for publication
+Covering all relevant prior work is both *ethical* and essential for sound evaluation.
+
+*Choosing Baselines:* Given large number of baselines, you can reduce the scope by ranking them based on: *state of the Art (SOTA)* (demonstrated superiority over prior methods), *publication venue* (published in top-tier venues), and *code availability* (public or obtainable implementations).
+Ideally, baselines included for evaluation should satisfy all three.  
+You may select the top *X* baselines using these criteria, but In all cases, clearly justify why certain baselines were included, and why others were excluded.
+Consider these additional cases to decide which baselines to include when all the three requirements (SOTA, publication, code availability) are met:
+
+- If one prior baseline clearly demonstrates that it outperforms others in the *same setting*, weaker methods may be excluded.
+
+- If baselines operate in **different settings** (e.g., client-side vs. server-side FL defenses), include all relevant variants.
+
+- If prior works do not show consistent or significant improvements against competing baselines across different models or datasets, then include all of them in your evaluation for a fair comparison.
+
+- For recent work or methods which were not compared with others whose relative performance with other baselines is unclear, include them for evaluation.
+
+
+Comparing against weakened baselines undermines credibility and invites criticism. Hence, when implementing baselines, consider the following:
+
+- Always use **official implementations** and **original configurations** reported by prior work.
+
+- If code is not public, reach out to the authors to politely ask if they can share their code or make it public (responses are not guaranteed). You can keep the mail very general highligting that you are interested in building on their work without explicit details of your project.
+
+- *Always give baselines an advantage:* When claiming that your proposed approach outperforms prior work, make sure you have optimized the baselines using their best-reported configurations, and evaluate against the strongest possible version of prior work. This prevents misleading conclusions and incorrect claims.
+
+- Reimplement prior work only when absolutely necessary. During reproduction, bugs or configuration mismatches can falsely suggest that your proposed approach is better than prior work. Hence, we want to avoid this.
+
+
+
+**Experimental Hygiene**
+
+- Run each experiment multiple times per configuration.
+
+- Report **mean and standard deviation**.
+
+- Claim improvements only when differences are **statistically significant**.
+
+- Use appropriate tests (e.g., t-test) or verify that confidence intervals do not overlap.
+
+
+**Bugs and Sanity Checks:** Perform regular sanity checks throughout implementation by checking if the results match with your expectations. Verify intermediate results at each step. If results deviate from expectations, investigate immediately. Spend time ensuring that *results, reasoning, and narrative align*.
+
+**Models and Datasets:** When comparing to prior work, use the **same models, datasets, and configurations**. This gives prior work an advantage and makes comparisons fair and credible. For broader evaluation, follow recent literature and test across diverse models. For model evaluation, reviewers expect coverage across scales, for example: small: ~7B parameters, medium: ~13B parameters, and large: ~70B parameters. This helps demonstrate robustness across model capacities and complexity of dataset.
+
+**Integrity and Transparency:** Maintain integrity in evaluation and reporting. If results are weak, revisit assumptions and redesign your approach or identify reasons why this is fundamentally difficult. Do not hide poor results.It is acceptable if your method fails in some cases. Understanding and reporting failure modes strengthens the paper. If so, come up with explainations why. Every claim should be backed by at least one of the following: citation to prior work, logical explanation (possibly grounded in prior work), and empirical evidence to validate your claim.

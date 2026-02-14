@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Writing Style for Systems Security Papers | 07-arxiv</title>
+  <meta name="description" content="4 Writing Style for Systems Security Papers | 07-arxiv" />
+  <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Writing Style for Systems Security Papers | 07-arxiv" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Writing Style for Systems Security Papers | 07-arxiv" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="guidelines-for-implementations-and-code.html"/>
+<link rel="next" href="style-for-presentation.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Wiki @ SAPhIRE Lab</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Welcome to the Group Wiki 👋</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#research-group-guidelines-policies"><i class="fa fa-check"></i><b>1.1</b> Research Group Guidelines &amp; Policies</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#meetings-reports"><i class="fa fa-check"></i><b>1.2</b> Meetings &amp; Reports</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#weekly-meeting-reports"><i class="fa fa-check"></i><b>1.2.1</b> Weekly Meeting Reports</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#weekly-one-on-one-meetings-duration-30-minutes"><i class="fa fa-check"></i><b>1.2.2</b> Weekly One-on-One Meetings [Duration: 30 minutes]</a></li>
+<li class="chapter" data-level="1.2.3" data-path="index.html"><a href="index.html#weekly-group-meetings-duration-60-minutes"><i class="fa fa-check"></i><b>1.2.3</b> Weekly Group Meetings [Duration: 60 minutes]</a></li>
+<li class="chapter" data-level="1.2.4" data-path="index.html"><a href="index.html#weekly-project-meetings-duration-60-minutes"><i class="fa fa-check"></i><b>1.2.4</b> Weekly Project Meetings [Duration: 60 minutes]</a></li>
+<li class="chapter" data-level="1.2.5" data-path="index.html"><a href="index.html#brainstorming-sessions-duration-tbd-as-needed"><i class="fa fa-check"></i><b>1.2.5</b> Brainstorming Sessions [Duration: TBD as needed]</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#scheduling-meetings"><i class="fa fa-check"></i><b>1.3</b> Scheduling Meetings</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#policies-for-vacation"><i class="fa fa-check"></i><b>1.4</b> Policies for Vacation</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="research-projects.html"><a href="research-projects.html"><i class="fa fa-check"></i><b>2</b> Research Projects</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="research-projects.html"><a href="research-projects.html#ok-paper-vs.-good-paper"><i class="fa fa-check"></i><b>2.1</b> Ok paper vs. Good Paper</a></li>
+<li class="chapter" data-level="2.2" data-path="research-projects.html"><a href="research-projects.html#what-is-expected-of-the-projects"><i class="fa fa-check"></i><b>2.2</b> What is expected of the projects</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="guidelines-for-implementations-and-code.html"><a href="guidelines-for-implementations-and-code.html"><i class="fa fa-check"></i><b>3</b> Guidelines for Implementations and Code</a></li>
+<li class="chapter" data-level="4" data-path="writing-style-for-systems-security-papers.html"><a href="writing-style-for-systems-security-papers.html"><i class="fa fa-check"></i><b>4</b> Writing Style for Systems Security Papers</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="writing-style-for-systems-security-papers.html"><a href="writing-style-for-systems-security-papers.html#post-publication-prcoess"><i class="fa fa-check"></i><b>4.1</b> Post-publication Prcoess</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="writing-style-for-systems-security-papers.html"><a href="writing-style-for-systems-security-papers.html#process"><i class="fa fa-check"></i><b>4.1.1</b> Process</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="style-for-presentation.html"><a href="style-for-presentation.html"><i class="fa fa-check"></i><b>5</b> Style for Presentation</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">07-arxiv</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="writing-style-for-systems-security-papers" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Writing Style for Systems Security Papers<a href="writing-style-for-systems-security-papers.html#writing-style-for-systems-security-papers" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+Through my various research collaborations, my writing style has been influenced by different mentors. Some of these styles were conflicting, requiring me to adapt. But my current the writing style that I use has been heavily inspired by my advisor Prof. N Asokan, who was extremely patient while I made terrible writing mistakes. While there is still a long way to improve my writing, over time, I got a sense of how to write papers as expected by my advisor. The reason I rely and advocate this heavily is that (a) this is well-structure, systematic and easy to follow, and (b) responses from reviewers about writing have been mostly positive (including in some cases praises for combining a lot of context well as in our SoK paper which won the distinguished paper award at Oakland). In this blog post, I want to document the writing style in our group which I hope will be useful for others. Also, I will give concrete examples from existing papers to illustrate some aspects.
+For all the papers I have written after joining SSG, we have followed a more or less fixed template. You can see the pattern across the different papers clearly: paper1, paper2, …
+I found this standard template to be very systematic and easy to following. And generally, any new project which fits most of the themes (designing a new ML system (e.g., Laminator) or designing a new defense (e.g., grove, espresso), I can blindly follow the same template and get some decent systematic structure for the paper which is easy to follow. I want to discuss these below. Note that there are definetely variants of the template or cases where the template did not fit well (e.g., SoK does not have a problem statement) but they are usually within some reasonably minimal deviations from template. I also include a lot of my personaly style preferences for paper writing and this blog leans on that at several points.
+Structure
+We use overleaf and for all any new project, I include the following files as part of the basic template (naming is numbered so that it is easy to see since it is ordered according to the sections):
+0macros.tex: contains all the macros
+0abstract.tex: Indicates the text for abstract
+1introduction.tex
+2background.tex
+3problem.tex
+4approach.tex
+5setup.tex: experimental setup: datasets, models, metrics, baselines (which could be described in background section but here we only highlight what is it we compare with)
+6evaluation.tex: results and showing how your design meets all the described requirements laid out in 3problem.tex
+7discussion.tex
+Writing:
+Start with the structure of the paper
+Then include the possible sections to include and add topic sentences for each
+Create a macro
+within which we indicate a high level description of what should be included.
+Then start writing the text and later switch off the macro.
+Note: In case of limited space, you can consider using the symbol § to replace “section”.
+0macros.tex: Macros
+I mention some standard libraries and function calls I used for most papers which is useful and can be copied for all subsequent projects.
+gratutous use of synonyms: when using a word, always think if this will confuse the reader; technical words should be fixed; no synonyms; general english terms are ok
+0abstract.tex: Abstract
+One line each:
+a general statement of the issue to be solved.
+why is it important and challenging
+a sentence motivating your goal of this work: “Hence, we need a defense which protects against…”
+Indicate the desiderate or requirements for an ideal system: Ideally, a defense should be…
+Limitations of prior work: Could be a simple statement like “None of the prior works meet all requirements” [No need to go into details in teh abstract; we will add more context in intro and further more in problem statement]
+All the above can be in one paragraph. Now we switch contexts, and indicate our contributions.
+Present our framework, and text to indicate what is unique with it (the first framework which is robust”
+the general ideal on why it works and addressing the challenges faces by prior works
+results (including some numbers XX% aaccuracy on YY)…and indicating that it satisfiess all requirements.
+One paragraph or two paragraphs: Ideally, I try to keep it one paragraph. But sometimes the problem description adn limitations of prior work take up space. In which case, I spearate our contributions and its result summary in a second paragrpah. Both are fine. If it is getting too long, split into two paragraphs.
+1introduction.tex: Introduction
+one paragraph for each: general introduction to the area, current problem, challenges to solve the problem, ideal way to solve the problem (specify the requirements/desiderata), limitations of existing work, and our idea/intuition and brief approach along with the contributions (in bullet points)
+Contributions (No need for a specific subheading called contributions.): In some papers, you will find very long contributions which span paragraphs explaining how they solve the problem. This makes it hard for people (like me) who sometimes want o skim the paper and get a sense of the approach and their results in a quick glance. This requires me to read more than I want to…hence, going more towards conciseness, the constributions should be always be specific with forward pointers to the sections (do not waste space with an extra paragrpah saying the outline of the paper….e.g., We will discuss blabla in Section A, blublu in section B, cluclu in Section C, …). As my advisor keeps saying, trat empty space like real estate. Make sure every word you put is worth it. Also, not many people tend to read them since by looking at the headings in the papers, you can get a sense of what it will include.
+You can do the following:
+<general intuition about our approach>
+We claim the following (main) contributions: we present
+2background.tex: Background
+SHould include subsections covering topics described in the rest of the work. ANy that you are propsing should not be mentioned. Backgroun should only containing exisiting work. Not even statements like “In this work, we will evaluate,…” though it might be ok to say “we focus our evaluation (see Section~<span class="math inline">\(\ref{}\)</span>) on ABC variant of the defense/attack and hence only include a description of this. For more comprehensive survye, refer to ABC et al..
+Introduction to ML notations/LLM notations
+Other related desc
+3problem.tex: Problem Statement
+Do not repeat text from instroduction or background.
+Start with what your objective is, not what the challenge or problem that you are solving is.
+“Our goal is to design a defense against prompt injection attacks.” The reader have gone over abstract, intro, and background, knows you are deadling with the problem of prompt injection and hence, the problem statement you can start iwht is you objective in this paper.
+Since we follow systems based work, the above statement generally follows with a set of requirement that an ideal system or defense should satisfy.
+Style Statement: Generally, problem statement can be small and may not require subsection. See my note on subsection in Misc towards the end. If the subsections are small, consider using to highlight the subheading. You might have the following subheading under problem statement:
+Threat Model/Adversary Description/Adversary Model
+System Model
+Requirements/Desiderata
+Limitations of Prior works (in light of the requirements)
+Challenges (set of challenges for building a system that you want to address in order to satisfy a requirement)
+Threat Model/Adversary Description/Adversary Model
+This should include assuptions about the adversary. See our SoK on various characteristics of an adversary to include as part of the threat model [].
+System Model
+This includes a description of the system, the pipeline or setting in which teh ML model is being used.
+In some cases, you can have a defender, or model builder, or prover, with their own set of assumptions. We can include their, goals, assumptions, access, knowledge (similar to adversary description) for describing the defender.
+Requirements/Desiderata
+Requirements are more strict and should be satified ideally;
+Desiderate is more like a general guidelines that should be followed..
+This can be done to systematically indicate bullet points for challenges or limitations as well. For a lot of these, I generally use some latex enumerate type libraries to identify multiple requirements, challenges, which helps me refer to them later in the paper. For instance, for different requirements:
+We can then indicate by saying <span class="math inline">\(\ref{req1}\)</span> to refer to requirement 1. This list can be the same as what you have in the abstract and introduction. This is one of the rare things which are repeated in the text but problem statement is also the last time we will describe this.
+In case of space limitations, you can use
+This will put it in a single line and may require
+in the macros.
+Here are some example requirements I have used in prior work:
+effective (to reduce the attack success rate)
+efficient (incurs a low overhead)
+applicable/general (can be used for differrent cases without modification)
+Non-invasive (does not require making any changes)
+extensible (allows including more risks, parameters, etc.)
+robust (resist evasion by adversaries)
+utility-preserving (maintains acceptable utility on non-adversarial data)
+Scalable (supports large numbers of provers/verifiers).
+Versatile (supports a wide variety of properties; requires minimal effort to add support for new properties).
+Rest of the paper, should following the requirements. In toerhh words, the approach and evaluation section, shoudl constatly keep referring to how your design choices help satisfy some requirement or explicitly have subsections to either indicate the design choice to satisfy the requirement or to evaluate the system for a particular requirement.
+Note that some of the requirements may be a discussion rather than empirical evaluation (see non-invasive and general requirements for combining exisiting defenses; or scalable or versatile properties in laminator.
+Limitation of Prior work
+Firstly, a thourough coverage of related work is important. Further subscribe to arxiv daily digest and go voer them whenever the mail comes religiously. This helps to identify related works and even interesting unrelated works which could be future projects. I have had many such cases where I remember seeing a paper from the igest which turned out to be a related work for a new project.
+Systematically cover all the different papers and describe them; Since you have identified a set of requirements for an ideal system. (e.g., defense, framework), this helps to evaluate others with respect to those requirements. Have a table sumarizing how different papers satisfy different works. You can use checkmark or full circle for requirements being satisfied, or cross or empty circle for not satisfies (see wasysm or pifont libraries). Alternatively, partially sastified requirement can also be used but it has to be justified well….what counts as being partially satified?
+To decide whether or not empirically evaluate them, consider the following:
+if it is a SOTA for a given requirement, definitely use it for comparison
+any other non-SOTA can be ignore by citing the SOTA only if the SOTA has indicated an explicit comparison with other snad shown that they outperform them
+If there are papers which are not evaluated by SOTA, you might have to add that benchmark.
+If for most requirement, a defense does not satify, you can discount them saying they do not meet the requirements. But check if they are SOTA in any specific requiremtn and may need a comparison as indicated in the first point.
+This discussion should go into the problem statement under “limitations of prior work” but the description of all related works that will be compared in the problem statement should be in the background section.
+Challenges
+Include this if there are specific unique challenges that arise while trying to design an ideal system which satisifes all the requirements.
+We identify the folllowing challenges prior to deisngin such a defense:
+Challenge 1:
+Challenge 2:
+The ideal of labelling them is that in approach and evaluation, you can refer to these challenges and say how your design choices address these challenges <span class="math inline">\(\ref{c1}\)</span> to meet some requirement <span class="math inline">\(\ref{req}\)</span>.
+These could include muplt challenges you may have to overcome while trying to meet a paritcular requirement.
+Tables
+I used to use normal table etc. But I came across booktabspackage which can give.very profession looking tables. Here are some general styles I follow:
+Booktabs examples
+multicol and multirow (texblog)
+Figures
+I have been very particular about the quality of the figures
+primary is using tikz: very classy figures and high quality with high precision of detail; No problem of font sizes and pixel degradation. Cons: requires a lot of time and effort. For me, I spend time making the figure as a hobby while watching some shows in the background. So this does not feel taxing. Some tikz files I have used and can help as boiler plate code for future projects:
+power point or keynote: Figures using these have turned out somewhat good in the past specially when there is a lot of things to include in the figure and tikz is a lot of work. For instance, espresso figure was done using powerpoint. However, I really liked comic sans font used in some figures for LLM papers and found it in keynote for mac. The SoK on threat model has a figure which was designed using keynote.
+Switching between templates
+Switch for arxiv and actual submission paper
+%
+%
+After submission, the space might be a limiting factor. Hence, some experiments can be included in teh arxiv version of the paper and the submission version can point to it:
+“
+<p>”
+For different templates….I simply have a separate header file for a specific conference…
+0acm.tex
+0usenix.tex
+0ndss.tex
+0ieee.tex
+I make the title as a macro as well so I can only change the title in the macros and it is reflected across all versions
+Misc
+Active Voice: We always use active voice and this helps to specify who did a particular task.
+ABC task was evaluate in this process. (by whom? this is generally lost in passitve)
+Prior works or CDF et al.~ evaluated ABC task in this process.
+Exford Commas: Always use oxford commas [read up on it for more details]…if there are multiple items, A, B, C and D. oxford commas: A, B, C, and D. This also allows for simmilar items to be clubbed together, A, B and E, C and D. Here, we know B anE are linked but different from other items. Same works with “or”.
+Symbols: Use macros wherever possible. If you are using some term multiple times or acrosnym, consider having a macro for them. I cannot stress this enough. This saves a lot of time to go over different things and replacing them which could intrdouce errors.
+Some other things: When replacing with a macro check for the text. Previously the text could read “the adversary can evade”. Simple cntr+f adversary and replace with macro Adv will read incorrect: “the Adv can evade”. It is like saying “The donald trump” or “the Vasisht”. Extra check when replacing with macros that preceding “the” and “a” are accounted.
+Repeating Text: Ideally we don’t repeat text from previous section. Once we have defined or explained something, we can simply refer to that text later if needed. In some cases, it has been a while and the reader is likely to forget the context. You can use “Recall from Section~<span class="math inline">\(\ref{}\)</span> where we discussed…” If a section has less or equal to two subsections which are relattively smal, consider not having them as subsections. You can differentiate text and create subheadings using , , and a combination of them. What I follow is this:
+: this acts as the heading (previosuly the subsection heading)
+:
+:
+:
+: blabla bla
+This makes it clear that H1 is the bigger heading under which you have three subcategories or topics.
+is again my styling choice. it makes the heading start without any indent which looks cleaner and separates it from other paragraphs.
+Using LLMs: My writing has improved in terms of less errors (grammar, spellings etc) after using LLMs. I have found LLMs can be useful when I have a garbled sentence but need to make ti more clear and precisie. Hence, asking it to improve text and making it concise generally does a decent job. However, using LLMs for entire paragraphs and sections is too much specially that I have to go voer the output to make sure the model did not generate some incorrect stuff. This is time consuming. So i tend to use it for limited cases for some specific sentences.
+Check for Logical Consistency among Statements
+For every subsequent statement, make it it flows well wrt to the previous one. If there is any abrupt changes or awkward reading, that is a sign to consider removing, rephrasing or adding more context to make the flow better. This is a constant check that has to be done for every statement you write.
+Backup Every Statement
+This is very important. Never make statements that you cannot verify or backup. It is empty statements and mean nothing. There are three ways to do it (should be considered in order when you are trying to back up your statements):
+refer to prior works (citation to say that you statement was verifier by some other works empirically)
+logically argue (there could be cases where some deductions can be straightforward and do not need an evlauation; for instance, their appropach uses fine-tning over ABC and DEF requiring XYZ GPUs and hence, inefficient for practical use).
+Empirically backing up: If none of the above work, you have to resort to setting up an experiment and evaluating it. For instance, in our SoK, we made a statement that “overfitting and memorization can occur together or indepdently” While there was some citations previously, there was nothing concrete to verify the different cases. So, we had a small experiment (separate from that in the main paper) to validate this. Note that this had some connection to the discussion at hand since overfitting and memorization were critical to the paper, and we had space. If your statement is not critically important and /or limited space, you can resort to the results in teh appendix and state in the main body “we conduct a small experiments to verufy this which is discussed in Appendix A”.
+Consistency
+Never use synonyms for any technical terms. If you have defined a term in the beginning, make sure the rest of the paper also uses it. Synonyms while improves general english writing is likely to confuse readers in technical writing. So ensure the same terms are consistently used everywhere.
+References
+Citations should be towards the end of the sentence only if being referred as a number.
+This was done in prior work~.
+If it is a name of a system, you can use Name~, was proposed as a defense against…
+In case there is a list, citations should come with the relevant items.
+Their approach was ineffective~, ineffeicient~, and easy to evade~.
+In case, you have your own evaluation pointing to some result in addition to citation, you can do the following: “Their approach was ineffective~, ineffeicient~, and easy to evade (~ and Section~<span class="math inline">\(\ref{}\)</span>).” to indicate there was some prior work suggesting this but you also show it in your evaluation (maybe in a different context with some novelty; otherwise there is no need for evaluation and you can simply cite prior work)
+In the paper, always use ABC et al~ or</p>
+<div id="post-publication-prcoess" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Post-publication Prcoess<a href="writing-style-for-systems-security-papers.html#post-publication-prcoess" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Work on the code and make it publicly available on the group’s github page. Make one single clean push with a new repo so no commit history is visible. See XX on guidelines to write code.</p>
+<p>Push the camera ready version on arxiv with an indication of where it is published in comments.</p>
+<p>Work on a short blog (if required) highlighting the problem, key results, and main takeaway.</p>
+<p>Update the website with the new publication in the correct format and all the appropriate links (including to the blog post).
+Make a post for X and LinkedIN using the official group handles (and not personal handles) sharing the work. You can use the following template:</p>
+<pre><code>Our paper titled &quot;XX&quot; has been accepted to &quot;YY&quot;
+
+**Authors**: X, Y, Z
+
+**Problem**: &lt;one line description&gt;
+
+Approach: &lt;one line description&gt;
+
+Results + Takeaways: &lt;one line description: We show that...This highliths the importance of...&gt;
+</code></pre>
+<p>Start working on on the presentation (see XXX) and get feedback and finalize it.
+We make a master’s slide deck which is a long form presentation covering all parts of the paper.
+We then create a copy of the master deck to specific cases depending on the time limit as required.</p>
+<div id="process" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Process<a href="writing-style-for-systems-security-papers.html#process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Once you give me a draft of some sections or the paper…I will go over and leave comments and make changes…Ideally, I will do this online with you so you can see how to make the changes and write the papers in the hope that you will pick it up and can do it independently in the future with minimal supervision. These would be long meetings to go over the paper together but use these initial meetings as a teaching session to write papers well.</p>
+<p>Ideally, start by giving me the abstract and introduction. While many people prefer to write it at the end, writing this at the beginning gives an idea about how to position rest of the paper. Once we have finalized the storyline of the paper and agreed on common termiinplogy (do not use synonyms for technical words) you can update the rest of the text accordingly to rflect the introduction.</p>
+<p>Generally, once I make edits and sign off on the changes, do not overwrite them unless you run the changes by me and I can approve. otherwise, there might be additional inconsistencies or clarifications which are missed.</p>
+
+
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="guidelines-for-implementations-and-code.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="style-for-presentation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": "https://github.com/SAPhIRELab/wiki/edit/main/04-writing.Rmd",
+    "text": "Edit"
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": "https://github.com/SAPhIRELab/wiki/blob/main/04-writing.Rmd",
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
