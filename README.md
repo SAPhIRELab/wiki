@@ -19,7 +19,10 @@ Download and install RStudio and R: https://cran.r-project.org/bin/macosx/.
 
 (You will need to repeat steps 2 and 4 every time you wish to update the book online.)
 
-
 ## Editing Pages
 
 Feel free to fix make minor changes.
+
+## Credits
+
+See [video](https://www.youtube.com/watch?v=m5D-yoH416Y)

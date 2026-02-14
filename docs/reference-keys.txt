@@ -3,10 +3,9 @@ meetings-reports
 scheduling-meetings
 policies-for-vacation
 guidelines-research-projects
-list-of-research-projects
 types-of-projects
-my-approach-to-identifying-research-problems
-careful-with-terminology
+my-approach-to-identify-research-problems
+note-on-terminology
 how-to-approach-projects
 guidelines-implementations-and-code
 guidelines-writing-style-for-systems-security-papers

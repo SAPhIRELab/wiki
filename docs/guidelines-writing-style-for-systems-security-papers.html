@@ -82,11 +82,10 @@
 </ul></li>
 <li class="chapter" data-level="2" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html"><i class="fa fa-check"></i><b>2</b> Guidelines: Research Projects</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#list-of-research-projects"><i class="fa fa-check"></i><b>2.1</b> List of Research Projects</a></li>
-<li class="chapter" data-level="2.2" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#types-of-projects"><i class="fa fa-check"></i><b>2.2</b> Types of Projects</a></li>
-<li class="chapter" data-level="2.3" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#my-approach-to-identifying-research-problems"><i class="fa fa-check"></i><b>2.3</b> My Approach to Identifying Research Problems</a></li>
-<li class="chapter" data-level="2.4" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#careful-with-terminology"><i class="fa fa-check"></i><b>2.4</b> Careful with Terminology</a></li>
-<li class="chapter" data-level="2.5" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#how-to-approach-projects"><i class="fa fa-check"></i><b>2.5</b> How to Approach Projects</a></li>
+<li class="chapter" data-level="2.1" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#types-of-projects"><i class="fa fa-check"></i><b>2.1</b> Types of Projects</a></li>
+<li class="chapter" data-level="2.2" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#my-approach-to-identify-research-problems"><i class="fa fa-check"></i><b>2.2</b> My Approach to Identify Research Problems</a></li>
+<li class="chapter" data-level="2.3" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#note-on-terminology"><i class="fa fa-check"></i><b>2.3</b> Note on Terminology</a></li>
+<li class="chapter" data-level="2.4" data-path="guidelines-research-projects.html"><a href="guidelines-research-projects.html#how-to-approach-projects"><i class="fa fa-check"></i><b>2.4</b> How to Approach Projects</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="guidelines-implementations-and-code.html"><a href="guidelines-implementations-and-code.html"><i class="fa fa-check"></i><b>3</b> Guidelines: Implementations and Code</a></li>
 <li class="chapter" data-level="4" data-path="guidelines-writing-style-for-systems-security-papers.html"><a href="guidelines-writing-style-for-systems-security-papers.html"><i class="fa fa-check"></i><b>4</b> Guidelines: Writing Style for Systems Security Papers</a>
@@ -120,7 +119,7 @@
             <section class="normal" id="section-">
 <div id="guidelines-writing-style-for-systems-security-papers" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">4</span> Guidelines: Writing Style for Systems Security Papers<a href="guidelines-writing-style-for-systems-security-papers.html#guidelines-writing-style-for-systems-security-papers" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-Through my various research collaborations, my writing style has been influenced by different mentors. Some of these styles were conflicting, requiring me to adapt. But my current the writing style that I use has been heavily inspired by my advisor Prof. N Asokan, who was extremely patient while I made terrible writing mistakes. While there is still a long way to improve my writing, over time, I got a sense of how to write papers as expected by my advisor. The reason I rely and advocate this heavily is that (a) this is well-structure, systematic and easy to follow, and (b) responses from reviewers about writing have been mostly positive (including in some cases praises for combining a lot of context well as in our SoK paper which won the distinguished paper award at Oakland). In this blog post, I want to document the writing style in our group which I hope will be useful for others. Also, I will give concrete examples from existing papers to illustrate some aspects.
+<p>Through my various research collaborations, my writing style has been influenced by different mentors. Some of these styles were conflicting, requiring me to adapt. But my current the writing style that I use has been heavily inspired by my advisor Prof. N Asokan, who was extremely patient while I made terrible writing mistakes. While there is still a long way to improve my writing, over time, I got a sense of how to write papers as expected by my advisor. The reason I rely and advocate this heavily is that (a) this is well-structure, systematic and easy to follow, and (b) responses from reviewers about writing have been mostly positive (including in some cases praises for combining a lot of context well as in our SoK paper which won the distinguished paper award at Oakland). In this blog post, I want to document the writing style in our group which I hope will be useful for others. Also, I will give concrete examples from existing papers to illustrate some aspects.
 For all the papers I have written after joining SSG, we have followed a more or less fixed template. You can see the pattern across the different papers clearly: paper1, paper2, …
 I found this standard template to be very systematic and easy to following. And generally, any new project which fits most of the themes (designing a new ML system (e.g., Laminator) or designing a new defense (e.g., grove, espresso), I can blindly follow the same template and get some decent systematic structure for the paper which is easy to follow. I want to discuss these below. Note that there are definetely variants of the template or cases where the template did not fit well (e.g., SoK does not have a problem statement) but they are usually within some reasonably minimal deviations from template. I also include a lot of my personaly style preferences for paper writing and this blog leans on that at several points.
 Structure
@@ -133,7 +132,9 @@ We use overleaf and for all any new project, I include the following files as pa
 4approach.tex
 5setup.tex: experimental setup: datasets, models, metrics, baselines (which could be described in background section but here we only highlight what is it we compare with)
 6evaluation.tex: results and showing how your design meets all the described requirements laid out in 3problem.tex
-7discussion.tex
+7discussion.tex</p>
+<p>Related work: Arrive digest subscribe to arxiv cs cr and you can consider ml and ai depending on relevant papers being published. Look for interesting recent papers that are put out on the website.
+The goal is to find related work that overlaps with your work (and also to check if your idea was covered my some other recent paper); papers published by well-known researchers in the field to get some ideas of latest research directions</p>
 Writing:
 Start with the structure of the paper
 Then include the possible sections to include and add topic sentences for each
